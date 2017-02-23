@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="kz">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <script>
+  var arr = [10,-2,4,92,59,-32],
+      fMax;
+  function getMax(arr) {
+    var arrLen = arr.length,
+        maxEl = arr[0];
+    for (var i = 0; i < arrLen; i++) {
+      if (maxEl < arr[i]) {
+        maxEl = arr[i];
+      }
+    }
+    return maxEl;
+  }
+  fMax = getMax(arr);
+  console.log(fMax); 
+  document.write(" MAX Jauaby---> : " + fMax);
+  </script>
+</body>
+</html>
